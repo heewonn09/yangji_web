@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#0A0E1A">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0A0E1A"/>
+    <rect x="528" y="250" width="40" height="300" fill="#C9A96E"/>
+    <rect x="588" y="250" width="40" height="300" fill="#C9A96E"/>
+    <text x="600" y="640" font-family="Georgia, serif" font-size="56" fill="#E8C98A" text-anchor="middle" letter-spacing="6">ELEVEN TOWER</text>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #0A0E1A; -webkit-font-smoothing: antialiased; }
+  ::selection { background: rgba(201,169,110,0.3); color: #F5F0E8; }
+  @media (max-width: 960px) {
+    [data-r="2col"] { grid-template-columns: 1fr !important; }
+    [data-r="feat"] { grid-template-columns: 1fr 1fr !important; }
+    [data-r="cta3"] { grid-template-columns: 1fr !important; }
+    [data-r="navlinks"] { display: none !important; }
+    [data-r="hero-h1"] { font-size: 46px !important; }
+    [data-r="phone"] { font-size: 36px !important; }
+    [data-r="table"] { font-size: 12px !important; }
+  }
+  @media (max-width: 560px) {
+    [data-r="feat"] { grid-template-columns: 1fr !important; }
+    [data-r="hero-h1"] { font-size: 36px !important; }
+    [data-r="phone"] { font-size: 26px !important; letter-spacing: 0.01em !important; }
+    [data-r="sectionpad"] { padding-left: 20px !important; padding-right: 20px !important; }
+    [data-r="table"] th, [data-r="table"] td { padding: 12px 14px !important; }
+    [data-r="swipehint"] { display: block !important; }
+    [data-r="barinfo"] { display: none !important; }
+  }
+</style>
+</helmet>
+
+<div id="ysc-main" style="background: #0A0E1A; color: #F5F0E8; font-family: 'Noto Sans KR', sans-serif; min-height: 100vh; overflow-x: hidden;">
+
+  <!-- ============ NAV ============ -->
+  <nav style="{{ navStyle }}">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px; height: 76px; display: flex; align-items: center; justify-content: space-between;">
+      <a href="#top" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: #F5F0E8; letter-spacing: 0.02em;">브레인시티 일레븐타워</span>
+        <span style="font-size: 9.5px; letter-spacing: 0.3em; color: #C9A96E; margin-top: 4px; font-weight: 400;">BRAINCITY ELEVEN TOWER</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 40px;">
+        <div data-r="navlinks" style="display: flex; gap: 32px; align-items: center;">
+          <a href="#location" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">입지·개발호재</a>
+          <a href="#tenants" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">입주기업</a>
+          <a href="#overview" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">건축 개요</a>
+          <a href="#units" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">상가 안내</a>
+          <a href="#cta" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">문의</a>
+        </div>
+        <a href="#cta" style="text-decoration: none; border: 1px solid #C9A96E; color: #E8C98A; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; padding: 11px 22px; border-radius: 2px; transition: all 0.3s;" style-hover="background: #C9A96E; color: #0A0E1A;">분양·임대 문의</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" style="position: relative; min-height: 92vh; display: flex; align-items: center; padding: 140px 0 80px; background: radial-gradient(120% 120% at 75% 20%, #16203A 0%, #0F1628 45%, #0A0E1A 100%); overflow: hidden">
+    <div style="position: absolute; inset: 0; background-image: linear-gradient(rgba(201,169,110,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,0.04) 1px, transparent 1px); background-size: 64px 64px; pointer-events: none;"></div>
+    <!-- signature "11" twin towers -->
+    <div style="position: absolute; top: 0; bottom: 0; left: 37%; display: flex; gap: 18px; align-items: stretch; pointer-events: none;">
+      <span style="width: 5px; background: linear-gradient(180deg, transparent 0%, rgba(201,169,110,0.5) 28%, rgba(201,169,110,0.5) 72%, transparent 100%);"></span>
+      <span style="width: 5px; background: linear-gradient(180deg, transparent 0%, rgba(201,169,110,0.5) 28%, rgba(201,169,110,0.5) 72%, transparent 100%);"></span>
+    </div>
+
+    
+
+    <div style="position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; color: #8A90A0;">
+      <span style="font-size: 10px; letter-spacing: 0.3em;">SCROLL</span>
+      <span style="width: 1px; height: 38px; background: linear-gradient(180deg, #C9A96E, transparent);"></span>
+    </div>
+  <div data-r="2col" style="position: relative; max-width: 1320px; margin: 0 auto; padding: 0 40px; width: 100%; display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 64px; align-items: center;">
+      <div style="display: block">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 28px;">
+          <span style="width: 38px; height: 1px; background: #C9A96E;"></span>
+          <span style="font-size: 12px; letter-spacing: 0.3em; color: #C9A96E;">EXCLUSIVE · 선착순 분양 / 임대 마감 임박</span>
+        </div>
+        
+        <h1 data-r="hero-h1" style="font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 40px; line-height: 1.18; letter-spacing: -0.02em; color: #F5F0E8; margin-bottom: 14px;">평택 브레인시티<br><span style="font-weight: 700; font-size: 60px; color: #FFFFFF;">11자 핵심상권의 완성</span></h1><p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 32px; color: #C9A96E; letter-spacing: 0.02em; margin-bottom: 28px;">BrainCity Eleven Tower</p>
+        <p style="font-size: 16px; line-height: 1.9; color: #C4C8D2; max-width: 500px; font-weight: 300; margin-bottom: 18px;">아주대학교 병원 · KAIST · K-반도체가 완성하는 자족도시. <strong style="color: #E8C98A; font-weight: 500;">6만~7만 배후수요</strong>가 증명하는 단 하나의 11자(字) 핵심상권.</p>
+        <p style="font-size: 14px; line-height: 1.7; color: #8A90A0; max-width: 500px; font-weight: 300; margin-bottom: 40px;">선호도 높은 전면 호실의 잔여가 빠르게 마감되고 있습니다. 지금 실시간 방문예약을 통해 평택의 미래를 먼저 선점하십시오.</p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <button onClick="{{ openReserve }}" style="cursor: pointer; font-family: inherit; border: none; background: linear-gradient(135deg, #E8C98A, #C9A96E); color: #0A0E1A; font-size: 14.5px; font-weight: 700; letter-spacing: 0.02em; padding: 17px 34px; border-radius: 3px; box-shadow: 0 6px 24px rgba(201,169,110,0.3); transition: all 0.3s;" style-hover="box-shadow: 0 8px 30px rgba(201,169,110,0.5); transform: translateY(-1px);">실시간 방문예약 신청</button>
+          <a href="#units" style="text-decoration: none; border: 1px solid rgba(201,169,110,0.5); color: #E8C98A; font-size: 14px; letter-spacing: 0.04em; padding: 16px 30px; border-radius: 3px; display: flex; align-items: center; gap: 10px; transition: all 0.3s;" style-hover="border-color: #C9A96E; background: rgba(201,169,110,0.08);">상가 안내 보기</a>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px;">
+          <div style="font-family: Poppins; font-size: 46px; font-weight: 400; color: #E8C98A; line-height: 1"><span style="font-size: 28px; margin-left: 4px; position: static; font-family: Roboto; width: 59px; height: 41px" data-om-label="ㄴㄴ">11자</span></div>
+          <div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px">핵심상권 동선</div>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px; width: 179px; height: 161px">
+          
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 400; color: #E8C98A; line-height: 1.05; width: 126px; height: 36px">2029 – 2030</div><div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px;">앵커시설 입점 확정</div>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px;">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 400; color: #E8C98A; line-height: 1.1;">161–171<span style="font-size: 18px; margin-left: 3px;">평</span></div>
+          <div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px;">호실 전용면적</div>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(201,169,110,0.06); padding: 30px 26px; border-radius: 3px; width: 181px; height: 161px">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; color: #E8C98A; line-height: 1.1; white-space: nowrap;">010-8228-0143</div><div style="font-size: 12px; color: #8A90A0; margin-top: 10px;">평택 센타장 김성희</div>
+          
+        </div>
+      </div>
+    </div></section>
+
+  <!-- ============ 입지·개발호재 ============ -->
+  <section id="location" data-reveal="" data-r="sectionpad" style="{{ revealStyle }} max-width: 1320px; margin: 0 auto; padding: 120px 40px;">
+    <div style="text-align: center; margin-bottom: 56px;">
+      <span style="font-size: 12px; letter-spacing: 0.32em; color: #C9A96E;">LOCATION · DEVELOPMENT</span>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 46px; color: #F5F0E8; margin-top: 14px;">평택 브레인시티 한가운데</h2>
+      <p style="font-size: 14.5px; color: #8A90A0; margin-top: 16px; font-weight: 300; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.8;">산업·교육·의료가 함께하는 인구 6~7만 규모의 자족 신도시. 첨단산업단지와 약 2만 5천 세대 아파트가 배후수요로 들어섭니다.</p>
+    </div>
+
+    <!-- 조감도 showcase -->
+    <div style="position: relative; border: 1px solid rgba(201,169,110,0.18); border-radius: 5px; overflow: hidden; margin-bottom: 24px;">
+      <img src="images/aerial.webp" alt="브레인시티 일레븐타워 조감도 — 아주대병원·카이스트 등 밀집학세권" width="1228" height="713" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto;">
+      <div style="position: absolute; inset: 0; box-shadow: inset 0 0 120px rgba(10,14,26,0.45); pointer-events: none;"></div>
+      <div style="position: absolute; left: 0; bottom: 0; padding: 22px 26px; background: linear-gradient(0deg, rgba(8,11,20,0.82), transparent);"><div style="font-family: monospace; font-size: 10.5px; color: rgba(201,169,110,0.75); letter-spacing: 0.12em;">AERIAL VIEW · 조감도</div><div style="font-size: 14px; color: #F5F0E8; margin-top: 5px; font-weight: 400;">완벽한 입지에 압도적 수요를 더하다 — 12개 단지 약 16,000세대 배후</div></div>
+    </div>
+
+    <div data-r="2col" style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; align-items: stretch;">
+      <div style="position: relative; min-height: 420px; border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; overflow: hidden; cursor: zoom-in;" onClick="{{ openMap }}">
+        <img src="images/map.webp" alt="브레인시티 위치도 / 배치도 — 경기 평택시 브레인시티 일원" width="1287" height="717" loading="lazy" decoding="async" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; right: 14px; top: 14px; display: flex; align-items: center; gap: 7px; background: rgba(8,11,20,0.7); border: 1px solid rgba(201,169,110,0.3); border-radius: 99px; padding: 7px 14px;"><span style="width: 5px; height: 5px; background: #C9A96E; border-radius: 50%;"></span><span style="font-size: 11px; color: #E8C98A; letter-spacing: 0.04em;">위치도 · 크게 보기</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 26px 28px;">
+          <div style="font-size: 11px; letter-spacing: 0.2em; color: #C9A96E; margin-bottom: 12px;">SELF-SUFFICIENT CITY</div>
+          <p style="font-size: 13.5px; line-height: 1.7; color: #B7BCC8; font-weight: 300;">산업·교육·의료가 함께하는 자족도시 — 통학거리가 짧고 최신식 시설, 여유로운 학습환경을 갖춘 신도시입니다.</p>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 26px 28px;">
+          <div style="font-size: 11px; letter-spacing: 0.2em; color: #C9A96E; margin-bottom: 12px;">BACKED DEMAND</div>
+          <p style="font-size: 13.5px; line-height: 1.7; color: #B7BCC8; font-weight: 300;">첨단산업단지와 약 2만 5천 세대 아파트, 인구 6만~7만의 배후수요가 상권을 떠받칩니다.</p>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 26px 28px; background: rgba(201,169,110,0.04);">
+          <div style="font-size: 11px; letter-spacing: 0.2em; color: #C9A96E; margin-bottom: 12px;">11-SHAPE STREET</div>
+          <p style="font-size: 13.5px; line-height: 1.7; color: #B7BCC8; font-weight: 300;">두 동이 마주 보는 11자(字) 동선 위 핵심상권 — 유동인구가 집중되는 가장 강력한 입지에 자리합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 입주기업 ============ -->
+  <section id="tenants" data-reveal="" data-r="sectionpad" style="{{ revealStyle }} background: #0C1120; border-top: 1px solid rgba(201,169,110,0.1); border-bottom: 1px solid rgba(201,169,110,0.1);">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 120px 40px;">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span style="font-size: 12px; letter-spacing: 0.32em; color: #C9A96E;">ANCHOR TENANTS</span>
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 46px; color: #F5F0E8; margin-top: 14px;">입점 확정 앵커시설</h2>
+        <p style="font-size: 13px; color: #8A90A0; margin-top: 12px; letter-spacing: 0.04em;">평택 브레인시티 (1단계) 입주기업 및 입점 확정업체</p>
+      </div>
+      <div data-r="feat" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+        <sc-for list="{{ tenants }}" as="t" hint-placeholder-count="4">
+          <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 5px; overflow: hidden; transition: background 0.4s; display: flex; flex-direction: column;" style-hover="background: rgba(201,169,110,0.05);">
+            <div style="position: relative; height: 168px; background: #0A0E1A; display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid rgba(201,169,110,0.14);">
+              <div style="position: absolute; inset: 0; background-image: linear-gradient(rgba(201,169,110,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,0.05) 1px, transparent 1px); background-size: 30px 30px;"></div>
+              <sc-if value="{{ t.isLogo }}" hint-placeholder-val="">
+                <div style="position: relative; width: 104px; height: 104px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,0.4);"><img src="{{ t.img }}" alt="{{ t.name }} 로고" loading="lazy" decoding="async" style="width: 78%; height: 78%; object-fit: contain;"></div>
+              </sc-if>
+              <sc-if value="{{ t.isPhoto }}" hint-placeholder-val="">
+                <img src="{{ t.img }}" alt="{{ t.name }}" loading="lazy" decoding="async" style="position: relative; width: 100%; height: 100%; object-fit: cover;">
+              </sc-if>
+            </div>
+            <div style="padding: 28px 26px; display: flex; flex-direction: column; flex: 1;">
+              <div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 8px; border: 1px solid rgba(201,169,110,0.4); border-radius: 99px; padding: 5px 12px; margin-bottom: 20px;"><span style="width: 6px; height: 6px; background: #C9A96E; border-radius: 50%;"></span><span style="font-size: 11px; color: #E8C98A; letter-spacing: 0.03em;">{{ t.tag }}</span></div>
+              <h3 style="font-size: 18px; color: #F5F0E8; font-weight: 500; margin-bottom: 6px;">{{ t.name }}</h3>
+              <div style="font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.16em; color: rgba(201,169,110,0.7); margin-bottom: 16px;">{{ t.en }}</div>
+              <p style="font-size: 13px; line-height: 1.75; color: #8A90A0; font-weight: 300;">{{ t.desc }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 건축 개요 ============ -->
+  <section id="overview" data-reveal="" data-r="sectionpad" style="{{ revealStyle }} max-width: 1320px; margin: 0 auto; padding: 120px 40px 0;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <span style="font-size: 12px; letter-spacing: 0.32em; color: #C9A96E;">BUILDING OVERVIEW</span>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 46px; color: #F5F0E8; margin-top: 14px;">건축 개요</h2>
+    </div>
+    <dl data-r="feat" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(201,169,110,0.16); border: 1px solid rgba(201,169,110,0.16); border-radius: 5px; overflow: hidden; margin: 0;">
+      <sc-for list="{{ overview }}" as="o" hint-placeholder-count="8">
+        <div style="background: #0B0F1C; padding: 30px 26px;">
+          <div style="font-size: 10.5px; letter-spacing: 0.16em; color: rgba(201,169,110,0.7); margin-bottom: 12px;">{{ o.en }}</div>
+          <dt style="font-size: 12.5px; color: #8A90A0; margin-bottom: 6px;">{{ o.label }}</dt>
+          <dd style="font-size: 16px; color: #F5F0E8; font-weight: 500; line-height: 1.4; margin: 0;">{{ o.value }}</dd>
+        </div>
+      </sc-for>
+    </dl>
+    <div style="text-align: center; margin-top: 32px;">
+      <button onClick="{{ openOverview }}" style="background: none; cursor: pointer; font-family: inherit; border: 1px solid #C9A96E; color: #E8C98A; font-size: 13.5px; font-weight: 500; padding: 13px 30px; border-radius: 2px; letter-spacing: 0.04em; transition: all 0.3s;" style-hover="background: #C9A96E; color: #0A0E1A;">건축 개요 자세히 보기</button>
+    </div>
+  </section>
+
+  <!-- ============ 상가 안내 (층별 평면도) ============ -->
+  <section id="units" data-reveal="" data-r="sectionpad" style="{{ revealStyle }} max-width: 1320px; margin: 0 auto; padding: 100px 40px 120px;">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <span style="font-size: 12px; letter-spacing: 0.32em; color: #C9A96E;">FLOOR PLAN · RETAIL UNITS</span>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 46px; color: #F5F0E8; margin-top: 14px;">층별 평면도 · 분양·임대 안내</h2>
+      <p style="font-size: 13.5px; color: #8A90A0; margin-top: 14px; font-weight: 300;">층을 선택하면 해당 층의 평면도와 분양·임대 조건을 확인할 수 있습니다.</p>
+    </div>
+
+    <!-- floor selector -->
+    <div style="display: flex; justify-content: center; gap: 10px; margin: 36px 0 40px; flex-wrap: wrap;">
+      <sc-for list="{{ floorTabs }}" as="f" hint-placeholder-count="5">
+        <button onClick="{{ f.onClick }}" style="{{ f.style }}">{{ f.label }}<span style="display: block; font-size: 10px; font-weight: 400; margin-top: 3px; opacity: 0.75;">{{ f.use }}</span></button>
+      </sc-for>
+    </div>
+
+    <div data-r="2col" style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: stretch;">
+      <!-- plan viewer -->
+      <div style="position: relative; min-height: 440px; border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; background: #0A0E1A; overflow: hidden; display: flex; align-items: center; justify-content: center; cursor: zoom-in;" onClick="{{ openPlan }}">
+        <img src="{{ selectedFloor.img }}" alt="{{ selectedFloor.planLabel }} 평면도" loading="lazy" decoding="async" style="position: relative; width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
+        <div style="position: absolute; right: 14px; bottom: 14px; display: flex; align-items: center; gap: 7px; background: rgba(8,11,20,0.7); border: 1px solid rgba(201,169,110,0.3); border-radius: 99px; padding: 8px 16px;"><span style="width: 11px; height: 11px; border: 1.5px solid #C9A96E; border-radius: 50%; position: relative;"></span><span style="font-size: 11.5px; color: #E8C98A; letter-spacing: 0.03em;">평면도 크게 보기</span></div>
+      </div>
+
+      <!-- info card -->
+      <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 40px; background: rgba(255,255,255,0.012); display: flex; flex-direction: column;">
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; color: #C9A96E;">{{ selectedFloor.planLabel }}</span>
+          <span style="font-size: 18px; color: #F5F0E8; font-weight: 500;">{{ selectedFloor.use }}</span>
+        </div>
+        <div style="font-size: 12.5px; color: #8A90A0; margin-bottom: 26px;">{{ selectedFloor.note }}</div>
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid rgba(201,169,110,0.12);"><span style="font-size: 13px; color: #8A90A0;">호실 구성</span><span style="font-size: 15px; color: #F5F0E8;">{{ selectedFloor.units }}</span></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid rgba(201,169,110,0.12);"><span style="font-size: 13px; color: #8A90A0;">전용면적</span><span style="font-size: 15px; color: #F5F0E8;">{{ selectedFloor.exclusive }}</span></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid rgba(201,169,110,0.12);"><span style="font-size: 13px; color: #8A90A0;">분양면적</span><span style="font-size: 15px; color: #F5F0E8;">{{ selectedFloor.supply }}</span></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0;"><span style="font-size: 13px; color: #8A90A0;">분양·임대</span><span style="font-size: 15px; color: #E8C98A; font-weight: 500;">별도 문의</span></div>
+        </div>
+        <a href="#cta" style="text-decoration: none; margin-top: auto; padding-top: 28px;"><span style="display: block; text-align: center; background: #C9A96E; color: #0A0E1A; font-size: 13.5px; font-weight: 500; padding: 15px; border-radius: 2px; letter-spacing: 0.04em; transition: background 0.3s;" style-hover="background: #E8C98A;">이 호실 상담받기</span></a>
+      </div>
+    </div>
+
+    <!-- comparison table -->
+    <p data-r="swipehint" style="display: none; font-size: 11.5px; color: #8A90A0; margin: 44px 0 10px; letter-spacing: 0.04em; text-align: center;">← 좌우로 밀어 전체 표를 확인하세요</p>
+    <div data-r="tablewrap" style="margin-top: 44px; border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; overflow: hidden; background: rgba(255,255,255,0.012);">
+      <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+      <table data-r="table" style="width: 100%; min-width: 600px; border-collapse: collapse; font-size: 14px;">
+        <thead>
+          <tr style="background: rgba(201,169,110,0.07);">
+            <th style="text-align: left; padding: 18px 24px; font-size: 12px; font-weight: 500; color: #C9A96E; letter-spacing: 0.06em; border-bottom: 1px solid rgba(201,169,110,0.18);">층 / 구분</th>
+            <th style="text-align: right; padding: 18px 24px; font-size: 12px; font-weight: 500; color: #C9A96E; letter-spacing: 0.06em; border-bottom: 1px solid rgba(201,169,110,0.18);">호실 수</th>
+            <th style="text-align: right; padding: 18px 24px; font-size: 12px; font-weight: 500; color: #C9A96E; letter-spacing: 0.06em; border-bottom: 1px solid rgba(201,169,110,0.18);">전용면적(평)</th>
+            <th style="text-align: right; padding: 18px 24px; font-size: 12px; font-weight: 500; color: #C9A96E; letter-spacing: 0.06em; border-bottom: 1px solid rgba(201,169,110,0.18);">분양면적(평)</th>
+            <th style="text-align: right; padding: 18px 24px; font-size: 12px; font-weight: 500; color: #C9A96E; letter-spacing: 0.06em; border-bottom: 1px solid rgba(201,169,110,0.18);">분양·임대</th>
+          </tr>
+        </thead>
+        <tbody>
+          <sc-for list="{{ floorTabs }}" as="u" hint-placeholder-count="5">
+            <tr onClick="{{ u.onClick }}" style="{{ u.rowStyle }}">
+              <td style="padding: 18px 24px; border-bottom: 1px solid rgba(201,169,110,0.1);"><span style="color: #F5F0E8; font-weight: 500;">{{ u.planLabel }}</span><span style="display: block; font-size: 11px; color: #8A90A0; margin-top: 3px; width: 68px; height: 29px">{{ u.use }}</span></td>
+              <td style="padding: 18px 24px; text-align: right; color: #B7BCC8; border-bottom: 1px solid rgba(201,169,110,0.1);">{{ u.units }}</td>
+              <td style="padding: 18px 24px; text-align: right; color: #F5F0E8; border-bottom: 1px solid rgba(201,169,110,0.1);">{{ u.exclusive }}</td>
+              <td style="padding: 18px 24px; text-align: right; color: #E8C98A; font-weight: 500; border-bottom: 1px solid rgba(201,169,110,0.1);">{{ u.supply }}</td>
+              <td style="padding: 18px 24px; text-align: right; color: #8A90A0; border-bottom: 1px solid rgba(201,169,110,0.1);">별도 문의</td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <p style="text-align: right; font-size: 11.5px; color: #6E7484; margin-top: 14px; letter-spacing: 0.03em;">※ 면적 단위: 평 / 표기 면적은 공부·설계상 면적으로 실제와 다를 수 있습니다. 분양가·임대 조건은 별도 상담 문의 바랍니다.</p>
+  </section>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <sc-if value="{{ lightbox.open }}" hint-placeholder-val="">
+    <div data-lightbox-root="" role="dialog" aria-modal="true" aria-label="확대 이미지 보기" onClick="{{ closeLightbox }}" style="position: fixed; inset: 0; z-index: 200; background: rgba(6,9,16,0.92); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: flex; align-items: center; justify-content: center; padding: 48px; cursor: zoom-out;">
+      <div onClick="{{ stopProp }}" style="position: relative; max-width: 1100px; width: 100%; cursor: default;">
+        <button onClick="{{ closeLightbox }}" aria-label="닫기" style="position: absolute; top: -42px; right: 0; display: flex; align-items: center; gap: 8px; background: none; border: none; cursor: pointer; color: #8A90A0; font-family: inherit; font-size: 12px; letter-spacing: 0.1em; padding: 6px;" style-hover="color: #F5F0E8;">CLOSE ✕</button>
+        <sc-if value="{{ lightbox.isMap }}" hint-placeholder-val="">
+          <img src="images/map.webp" alt="브레인시티 위치도 확대" width="1287" height="717" decoding="async" style="display: block; width: 100%; height: auto; border: 1px solid rgba(201,169,110,0.3); border-radius: 5px;">
+        </sc-if>
+        <sc-if value="{{ lightbox.isPlan }}" hint-placeholder-val="">
+          <img src="{{ lightbox.img }}" alt="{{ lightbox.label }} 평면도" decoding="async" style="display: block; width: 100%; height: auto; max-height: 84vh; object-fit: contain; background: #fff; border: 1px solid rgba(201,169,110,0.3); border-radius: 5px;">
+        </sc-if>
+        <sc-if value="{{ lightbox.isOverview }}" hint-placeholder-val="">
+          <div style="background: #0B0F1C; border: 1px solid rgba(201,169,110,0.3); border-radius: 6px; max-height: 82vh; overflow-y: auto;">
+            <div style="position: sticky; top: 0; background: #0B0F1C; padding: 26px 34px; border-bottom: 1px solid rgba(201,169,110,0.18);"><div style="font-size: 11px; letter-spacing: 0.2em; color: #C9A96E;">BUILDING OVERVIEW</div><div style="font-family: 'Cormorant Garamond', serif; font-size: 28px; color: #F5F0E8; margin-top: 4px;">건축 개요</div></div>
+            <dl style="margin: 0; padding: 8px 34px 30px;">
+              <sc-for list="{{ overviewDetail }}" as="d" hint-placeholder-count="12">
+                <div style="display: grid; grid-template-columns: 160px 1fr; gap: 20px; padding: 15px 0; border-bottom: 1px solid rgba(201,169,110,0.1);">
+                  <dt style="font-size: 13px; color: #C9A96E; font-weight: 500;">{{ d.label }}</dt>
+                  <dd style="font-size: 13.5px; color: #D7DAE2; margin: 0; line-height: 1.6;">{{ d.value }}</dd>
+                </div>
+              </sc-for>
+            </dl>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ CTA ============ -->
+  <section id="cta" data-reveal="" data-r="sectionpad" style="{{ revealStyle }} position: relative; background: radial-gradient(120% 120% at 50% 0%, #16203A, #0A0E1A); border-top: 1px solid rgba(201,169,110,0.1); overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: linear-gradient(rgba(201,169,110,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,0.04) 1px, transparent 1px); background-size: 64px 64px; pointer-events: none;"></div>
+    <div style="position: relative; max-width: 1320px; margin: 0 auto; padding: 120px 40px; text-align: center;">
+      <span style="font-size: 12px; letter-spacing: 0.32em; color: #C9A96E;">CONTACT</span>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 52px; color: #F5F0E8; margin-top: 14px; margin-bottom: 56px;">지금 바로 상담하세요</h2>
+      <div data-r="cta3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 920px; margin: 0 auto 64px;">
+        <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 40px 30px; background: rgba(255,255,255,0.015); transition: all 0.3s;" style-hover="border-color: #C9A96E; background: rgba(201,169,110,0.05);">
+          <div style="width: 52px; height: 52px; border: 1px solid #C9A96E; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px;"><span style="width: 18px; height: 18px; border: 2px solid #C9A96E; border-radius: 50% 50% 50% 4px;"></span></div>
+          <h3 style="font-size: 16px; color: #F5F0E8; font-weight: 500; margin-bottom: 10px;">전화 상담</h3>
+          <p style="font-size: 13px; color: #8A90A0; font-weight: 300;">병점 센타장 김현락<br>현장 직접 안내</p>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 40px 30px; background: rgba(255,255,255,0.015); transition: all 0.3s;" style-hover="border-color: #C9A96E; background: rgba(201,169,110,0.05);">
+          <div style="width: 52px; height: 52px; border: 1px solid #C9A96E; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px;"><span style="width: 20px; height: 16px; border: 2px solid #C9A96E; border-radius: 6px 6px 6px 0;"></span></div>
+          <h3 style="font-size: 16px; color: #F5F0E8; font-weight: 500; margin-bottom: 10px;">현장 방문 상담</h3>
+          <p style="font-size: 13px; color: #8A90A0; font-weight: 300;">평택 브레인시티 일원<br>모델 / 현장 안내</p>
+        </div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 4px; padding: 40px 30px; background: rgba(255,255,255,0.015); transition: all 0.3s;" style-hover="border-color: #C9A96E; background: rgba(201,169,110,0.05);">
+          <div style="width: 52px; height: 52px; border: 1px solid #C9A96E; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px;"><span style="width: 20px; height: 15px; border: 2px solid #C9A96E; border-radius: 2px;"></span></div>
+          <h3 style="font-size: 16px; color: #F5F0E8; font-weight: 500; margin-bottom: 10px;">분양·임대 자료</h3>
+          <p style="font-size: 13px; color: #8A90A0; font-weight: 300;">호실별 평면도<br>분양·임대 조건표</p>
+        </div>
+      </div>
+      <div style="font-size: 12px; letter-spacing: 0.3em; color: #8A90A0; margin-bottom: 16px;">분양·임대 문의 — 평택 센타장 김성희</div>
+      <a href="tel:010-8228-0143" data-r="phone" style="text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 500; color: #E8C98A; letter-spacing: 0.05em; display: inline-block; transition: color 0.3s;" style-hover="color: #F5F0E8;">010 — 8228 — 0143</a>
+      <div style="margin-top: 36px;">
+        <button onClick="{{ openReserve }}" style="cursor: pointer; font-family: inherit; border: none; background: linear-gradient(135deg, #E8C98A, #C9A96E); color: #0A0E1A; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; padding: 17px 44px; border-radius: 4px; box-shadow: 0 6px 24px rgba(201,169,110,0.3); transition: all 0.3s;" style-hover="box-shadow: 0 8px 30px rgba(201,169,110,0.5); transform: translateY(-1px);">실시간 방문예약 신청하기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 실시간 방문예약 모달 ============ -->
+  <sc-if value="{{ reserve.open }}" hint-placeholder-val="">
+    <div data-lightbox-root="" role="dialog" aria-modal="true" aria-label="실시간 방문예약" onClick="{{ closeReserve }}" style="position: fixed; inset: 0; z-index: 220; background: rgba(6,9,16,0.92); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); display: flex; align-items: flex-start; justify-content: center; padding: 48px 20px; overflow-y: auto; cursor: zoom-out;">
+      <div onClick="{{ stopProp }}" style="position: relative; max-width: 560px; width: 100%; background: #0C1120; border: 1px solid rgba(201,169,110,0.28); border-radius: 8px; overflow: hidden; cursor: default; box-shadow: 0 30px 80px rgba(0,0,0,0.55);">
+        <div style="height: 4px; background: linear-gradient(90deg, #E8C98A, #C9A96E);"></div>
+
+        <!-- header -->
+        <div style="padding: 30px 36px 22px; border-bottom: 1px solid rgba(201,169,110,0.14);">
+          <button onClick="{{ closeReserve }}" aria-label="닫기" style="position: absolute; top: 22px; right: 26px; background: none; border: none; cursor: pointer; color: #8A90A0; font-size: 20px; line-height: 1; padding: 4px;" style-hover="color: #F5F0E8;">✕</button>
+          <div style="font-size: 11px; letter-spacing: 0.22em; color: #C9A96E;">REAL-TIME RESERVATION</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 27px; color: #F5F0E8; margin-top: 6px;">브레인시티 일레븐타워</div>
+          <div style="font-size: 13px; color: #8A90A0; margin-top: 4px;">실시간 방문예약 · 상시 접수</div>
+        </div>
+
+        <!-- ===== FORM STEP ===== -->
+        <sc-if value="{{ reserve.isForm }}" hint-placeholder-val="{{ true }}">
+        <div style="padding: 28px 36px 34px;">
+          <div style="text-align: right; font-size: 11.5px; color: #C56B6B; margin-bottom: 18px;">* 필수 입력</div>
+
+          <div style="margin-bottom: 22px;">
+            <label style="display: block; font-size: 13.5px; color: #F5F0E8; font-weight: 500; margin-bottom: 9px;"><span style="color: #C56B6B;">*</span> 성함</label>
+            <input type="text" value="{{ form.name }}" onChange="{{ onName }}" placeholder="이름을 입력해 주세요" style="width: 100%; box-sizing: border-box; background: #0A0E1A; border: 1px solid rgba(201,169,110,0.22); border-radius: 4px; color: #F5F0E8; font-family: inherit; font-size: 14px; padding: 13px 15px; outline: none; transition: border-color 0.2s;" style-focus="border-color: #C9A96E;">
+          </div>
+
+          <div style="margin-bottom: 22px;">
+            <label style="display: block; font-size: 13.5px; color: #F5F0E8; font-weight: 500; margin-bottom: 9px;"><span style="color: #C56B6B;">*</span> 연락처</label>
+            <input type="tel" value="{{ form.phone }}" onChange="{{ onPhone }}" placeholder="예) 010-1234-5678" style="width: 100%; box-sizing: border-box; background: #0A0E1A; border: 1px solid rgba(201,169,110,0.22); border-radius: 4px; color: #F5F0E8; font-family: inherit; font-size: 14px; padding: 13px 15px; outline: none; transition: border-color 0.2s;" style-focus="border-color: #C9A96E;">
+          </div>
+
+          <div style="margin-bottom: 22px;">
+            <label style="display: block; font-size: 13.5px; color: #F5F0E8; font-weight: 500; margin-bottom: 9px;"><span style="color: #C56B6B;">*</span> 방문 예정 날짜 및 시간</label>
+            <div style="display: flex; gap: 10px;">
+              <input type="date" value="{{ form.date }}" onChange="{{ onDate }}" style="flex: 1; min-width: 0; box-sizing: border-box; background: #0A0E1A; border: 1px solid rgba(201,169,110,0.22); border-radius: 4px; color: #F5F0E8; font-family: inherit; font-size: 14px; padding: 12px 14px; outline: none; color-scheme: dark; transition: border-color 0.2s;" style-focus="border-color: #C9A96E;">
+              <input type="time" value="{{ form.time }}" onChange="{{ onTime }}" style="flex: 1; min-width: 0; box-sizing: border-box; background: #0A0E1A; border: 1px solid rgba(201,169,110,0.22); border-radius: 4px; color: #F5F0E8; font-family: inherit; font-size: 14px; padding: 12px 14px; outline: none; color-scheme: dark; transition: border-color 0.2s;" style-focus="border-color: #C9A96E;">
+            </div>
+          </div>
+
+          <div style="margin-bottom: 24px;">
+            <label style="display: block; font-size: 13.5px; color: #F5F0E8; font-weight: 500; margin-bottom: 9px;">관심 층 / 호실</label>
+            <select value="{{ form.floor }}" onChange="{{ onFloor }}" style="width: 100%; box-sizing: border-box; background: #0A0E1A; border: 1px solid rgba(201,169,110,0.22); border-radius: 4px; color: #F5F0E8; font-family: inherit; font-size: 14px; padding: 13px 15px; outline: none; color-scheme: dark; cursor: pointer; transition: border-color 0.2s;" style-focus="border-color: #C9A96E;">
+              <sc-for list="{{ floorOptions }}" as="opt" hint-placeholder-count="6">
+                <option value="{{ opt }}" style="background: #0C1120;">{{ opt }}</option>
+              </sc-for>
+            </select>
+          </div>
+
+          <!-- privacy -->
+          <div style="border: 1px solid rgba(201,169,110,0.18); border-radius: 5px; padding: 18px 20px; background: rgba(255,255,255,0.012); margin-bottom: 14px;">
+            <div style="font-size: 12.5px; color: #F5F0E8; font-weight: 500; margin-bottom: 14px;"><span style="color: #C56B6B;">*</span> 개인정보 수집 및 이용 동의</div>
+            <div style="display: flex; flex-direction: column; gap: 9px; font-size: 12px; color: #8A90A0; line-height: 1.5;">
+              <div style="display: flex; gap: 12px;"><span style="flex-shrink: 0; width: 86px; color: #C9A96E;">수집 항목</span><span style="color: #C4C8D2;">성함, 연락처, 방문 희망 일시</span></div>
+              <div style="display: flex; gap: 12px;"><span style="flex-shrink: 0; width: 86px; color: #C9A96E;">이용 목적</span><span style="color: #C4C8D2;">상담사 연결 및 방문예약 안내</span></div>
+              <div style="display: flex; gap: 12px;"><span style="flex-shrink: 0; width: 86px; color: #C9A96E;">보유 기간</span><span style="color: #C4C8D2;">상담 완료 후 즉시 파기</span></div>
+            </div>
+            <div onClick="{{ toggleAgree }}" style="display: flex; align-items: center; gap: 11px; margin-top: 16px; padding-top: 15px; border-top: 1px solid rgba(201,169,110,0.12); cursor: pointer;">
+              <span style="{{ agreeBoxStyle }}"><span style="color: #0A0E1A; font-size: 12px; font-weight: 700; line-height: 1;">✓</span></span>
+              <span style="font-size: 13px; color: #F5F0E8;">개인정보 수집 및 이용에 동의합니다.</span>
+            </div>
+          </div>
+
+          <sc-if value="{{ formError }}" hint-placeholder-val="">
+            <div style="font-size: 12.5px; color: #E08C8C; margin-bottom: 14px; text-align: center;">{{ formError }}</div>
+          </sc-if>
+
+          <button onClick="{{ submitReserve }}" style="width: 100%; cursor: pointer; font-family: inherit; border: none; background: linear-gradient(135deg, #E8C98A, #C9A96E); color: #0A0E1A; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; padding: 16px; border-radius: 4px; box-shadow: 0 6px 22px rgba(201,169,110,0.28); transition: all 0.3s;" style-hover="box-shadow: 0 8px 28px rgba(201,169,110,0.45);">방문예약 신청하기</button>
+        </div>
+        </sc-if>
+
+        <!-- ===== DONE STEP ===== -->
+        <sc-if value="{{ reserve.isDone }}" hint-placeholder-val="">
+        <div style="padding: 40px 36px 36px; text-align: center;">
+          <div style="width: 66px; height: 66px; margin: 0 auto 22px; border-radius: 50%; border: 1.5px solid #C9A96E; background: rgba(201,169,110,0.08); display: flex; align-items: center; justify-content: center;"><span style="color: #E8C98A; font-size: 30px; line-height: 1;">✓</span></div>
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 28px; color: #F5F0E8; margin-bottom: 10px;">방문예약이 접수되었습니다</h3>
+          <p style="font-size: 13.5px; color: #8A90A0; line-height: 1.7; margin-bottom: 28px;">아래 내용으로 신청이 완료되었습니다.<br>담당자가 순차적으로 연락드려 일정을 확정해 드립니다.</p>
+
+          <div style="text-align: left; border: 1px solid rgba(201,169,110,0.2); border-radius: 6px; overflow: hidden; margin-bottom: 26px;">
+            <sc-for list="{{ reserveSummary }}" as="r" hint-placeholder-count="4">
+              <div style="display: flex; padding: 15px 20px; border-bottom: 1px solid rgba(201,169,110,0.1); background: rgba(255,255,255,0.012);">
+                <span style="flex-shrink: 0; width: 92px; font-size: 13px; color: #C9A96E;">{{ r.label }}</span>
+                <span style="font-size: 14px; color: #F5F0E8; font-weight: 500;">{{ r.value }}</span>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="font-size: 12.5px; color: #8A90A0; margin-bottom: 26px; line-height: 1.6;">분양·임대 문의 — 평택 센타장 김성희<br><a href="tel:010-8228-0143" style="color: #E8C98A; text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 19px; letter-spacing: 0.03em;">010-8228-0143</a></div>
+
+          <div style="display: flex; gap: 12px;">
+            <button onClick="{{ editReserve }}" style="flex: 1; cursor: pointer; font-family: inherit; background: none; border: 1px solid rgba(201,169,110,0.4); color: #E8C98A; font-size: 14px; font-weight: 500; padding: 14px; border-radius: 4px; transition: all 0.3s;" style-hover="border-color: #C9A96E; background: rgba(201,169,110,0.06);">내용 수정</button>
+            <button onClick="{{ closeReserve }}" style="flex: 1; cursor: pointer; font-family: inherit; border: none; background: linear-gradient(135deg, #E8C98A, #C9A96E); color: #0A0E1A; font-size: 14px; font-weight: 700; padding: 14px; border-radius: 4px; transition: all 0.3s;" style-hover="box-shadow: 0 6px 22px rgba(201,169,110,0.4);">확인 완료</button>
+          </div>
+        </div>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background: #080B14; border-top: 1px solid rgba(201,169,110,0.12);">
+    <div data-r="2col" style="max-width: 1320px; margin: 0 auto; padding: 64px 40px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: start;">
+      <div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; color: #F5F0E8;">브레인시티 일레븐타워</div>
+        <div style="font-size: 9.5px; letter-spacing: 0.3em; color: #C9A96E; margin-top: 5px;">BRAINCITY ELEVEN TOWER</div>
+        <div style="margin-top: 24px; font-size: 12.5px; line-height: 2; color: #6E7484; font-weight: 300;">
+          <div>분양 / 임대 · 11자 핵심상권</div>
+          <div>위치 : 경기 평택시 브레인시티 일원</div>
+          <div>분양·임대 문의 : 평택 센타장 김성희 010-8228-0143</div>
+        </div>
+        <div style="margin-top: 22px; font-size: 11px; color: #4E5464;">© 2026 BRAINCITY ELEVEN TOWER. 본 자료는 홍보용으로 실제와 다를 수 있습니다.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 16px;">
+        <div style="font-size: 11px; letter-spacing: 0.2em; color: #8A90A0;">CONTACT</div>
+        <a href="tel:010-8228-0143" style="text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #E8C98A; letter-spacing: 0.04em;">010-8228-0143</a>
+        <div style="font-size: 12px; color: #6E7484;">병점 센타장 김성희</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ STICKY BOTTOM BAR ============ -->
+  <div style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 150; background: rgba(10,14,26,0.9); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-top: 1px solid rgba(201,169,110,0.2);">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 12px;">
+      <div data-r="barinfo" style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.3;">
+        <span style="font-size: 11px; color: #8A90A0; letter-spacing: 0.04em;">분양·임대 상담 · 평택 센타장 김성희<br></span>
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 500; color: #E8C98A; letter-spacing: 0.03em">010-8228-0143</span>
+      </div>
+      <a href="tel:010-8228-0143" style="text-decoration: none; flex: 1; text-align: center; background: #C9A96E; color: #0A0E1A; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; padding: 14px 18px; border-radius: 3px; transition: background 0.3s;" style-hover="background: #E8C98A;">전화 걸기</a>
+      <button onClick="{{ openReserve }}" style="cursor: pointer; font-family: inherit; flex: 1; text-align: center; border: 1px solid #C9A96E; background: none; color: #E8C98A; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; padding: 13px 18px; border-radius: 3px; transition: all 0.3s;" style-hover="background: rgba(201,169,110,0.1);">방문예약</button>
+    </div>
+  </div>
+  <div aria-hidden="true" style="height: 72px;"></div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1320,&quot;height&quot;:900},&quot;revealAnimations&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = {
+    scrolled: false,
+    floor: 0,
+    lightbox: { open: false },
+    reserve: { open: false, step: 'form' },
+    form: { name: '', phone: '', date: '', time: '', floor: '관심 층 선택 (선택)', agree: false },
+    formError: '',
+  };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const s = window.scrollY > 40;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+
+    if (this.props.revealAnimations ?? true) {
+      const reveal = (el) => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; };
+      try {
+        this._io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => { if (e.isIntersecting) { reveal(e.target); this._io.unobserve(e.target); } });
+        }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+        const els = document.querySelectorAll('[data-reveal]');
+        els.forEach((el) => this._io.observe(el));
+        this._failsafe = setTimeout(() => { els.forEach(reveal); }, 2000);
+      } catch (err) {
+        document.querySelectorAll('[data-reveal]').forEach(reveal);
+      }
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    if (this._io) this._io.disconnect();
+    if (this._failsafe) clearTimeout(this._failsafe);
+    this._teardownLightbox();
+  }
+
+  _bgSiblings() {
+    const main = document.getElementById('ysc-main');
+    if (!main) return [];
+    return [...main.children].filter((c) => !c.hasAttribute('data-lightbox-root'));
+  }
+
+  _setupLightbox() {
+    if (this._keyHandler) { document.removeEventListener('keydown', this._keyHandler); this._keyHandler = null; }
+    this._prevFocus = document.activeElement;
+    document.body.style.overflow = 'hidden';
+    this._bgSiblings().forEach((c) => c.setAttribute('aria-hidden', 'true'));
+    // defer so the overlay is in the DOM
+    requestAnimationFrame(() => {
+      const overlay = document.querySelector('[data-lightbox-root]');
+      if (!overlay) return;
+      const focusables = overlay.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+      if (focusables[0]) focusables[0].focus();
+      this._keyHandler = (e) => {
+        if (e.key === 'Escape') { e.preventDefault(); this.setState((s) => ({ lightbox: { open: false }, reserve: { ...s.reserve, open: false } })); this._teardownLightbox(); return; }
+        if (e.key === 'Tab') {
+          const f = overlay.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+          if (!f.length) return;
+          const first = f[0], last = f[f.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      };
+      document.addEventListener('keydown', this._keyHandler);
+    });
+  }
+
+  _teardownLightbox() {
+    document.body.style.overflow = '';
+    this._bgSiblings().forEach((c) => c.removeAttribute('aria-hidden'));
+    if (this._keyHandler) { document.removeEventListener('keydown', this._keyHandler); this._keyHandler = null; }
+    if (this._prevFocus && this._prevFocus.focus) { try { this._prevFocus.focus(); } catch (e) {} }
+  }
+
+  renderVals() {
+    const revealOn = this.props.revealAnimations ?? true;
+    const revealStyle = revealOn
+      ? 'opacity: 0; transform: translateY(28px); transition: opacity 0.9s cubic-bezier(.22,1,.36,1), transform 0.9s cubic-bezier(.22,1,.36,1);'
+      : '';
+
+    const navBase = 'position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: all 0.4s ease;';
+    const navStyle = this.state.scrolled
+      ? navBase + ' background: rgba(10,14,26,0.78); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(201,169,110,0.14);'
+      : navBase + ' background: transparent; border-bottom: 1px solid transparent;';
+
+    const tenants = [
+      { tag: '2030년 입점 확정', name: '아주대학교 병원', en: 'AJOU UNIV. HOSPITAL', img: 'images/hospital.webp', isLogo: true, isPhoto: false, desc: '면적 약 25,000평 (500병상). 의료·연구·제조·바이오 중심의 산업시설 부지로 조성됩니다.' },
+      { tag: '2029년 입점 확정', name: '카이스트 (KAIST)', en: 'KAIST CAMPUS', img: 'images/kaist.webp', isLogo: true, isPhoto: false, desc: '산업·교육·의료가 함께하는 자족도시. 통학거리가 짧고 최신식 시설과 여유로운 학습환경을 갖춥니다.' },
+      { tag: 'K-반도체 강국 목표', name: '반도체 산업단지', en: 'K-SEMICONDUCTOR', img: 'images/semiconductor.webp', isLogo: false, isPhoto: true, desc: '삼성전자와 공동연구 및 반도체 인재 양성. 반도체 강국 목표의 핵심 거점으로 육성됩니다.' },
+      { tag: '배후 신도시', name: '6만~7만 신도시', en: 'NEW TOWN', img: 'images/aerial.webp', isLogo: false, isPhoto: true, desc: '첨단산업단지와 APT 약 2만 5천 세대가 들어서는 인구 6만~7만 규모의 신도시.' },
+    ];
+
+    const overview = [
+      { en: 'LOCATION', label: '대지위치', value: '평택 브레인시티 지원 1-6' },
+      { en: 'STREET TYPE', label: '상권 유형', value: '11자(字) 핵심상권' },
+      { en: 'SCALE', label: '규모', value: '지하 2층 ~ 지상 5층' },
+      { en: 'UNITS', label: '구성 호실', value: '약 46개 호실' },
+      { en: 'AREA', label: '전용면적', value: '약 10 ~ 34평' },
+      { en: 'USE', label: '주요용도', value: '제1·2종 근린생활시설' },
+      { en: 'HEIGHT', label: '건축 높이', value: '27.40 m' },
+      { en: 'CONTACT', label: '분양·임대 문의', value: '010-8228-0143' },
+    ];
+
+    const overviewDetail = [
+      { label: '사업명', value: '브레인시티 일레븐타워' },
+      { label: '대지위치', value: '경기도 평택시 브레인시티 지원 1-6-1, 1-6-2' },
+      { label: '용도지역지구', value: '준주거지역 · 지구단위계획구역 · 가축사육제한구역 · 상대보호구역 · 일반산업단지' },
+      { label: '대지면적', value: '1,201.00 ㎡' },
+      { label: '주요용도', value: '제1종 · 제2종 근린생활시설' },
+      { label: '도로현황', value: '10M 도로, 20M 도로' },
+      { label: '건축면적', value: '720.12 ㎡' },
+      { label: '건폐율', value: '59.96 % (법정 60% 이하)' },
+      { label: '연면적', value: '5,317.27 ㎡ (지상 3,540.23 / 지하 1,777.04)' },
+      { label: '용적률', value: '294.77 % (법정 300% 이하)' },
+      { label: '규모', value: '지하 2층 ~ 지상 5층 (법정 5층 이하)' },
+      { label: '건축 높이', value: '27.40 m' },
+      { label: '주요구조', value: '철근콘크리트조' },
+      { label: '주차대수', value: '계획 33대 (장애인 2대 포함)' },
+      { label: '외부마감', value: '로이복층유리 · 치장벽돌 · 알루미늄 쉬트패널/루버 · 외단열미장' },
+      { label: '설비개요', value: '승용승강기 2대 (장애인 겸용) · 오수 하수종말처리장 연결' },
+      { label: '조경면적', value: '182.89 ㎡ (대지면적의 15.23%)' },
+    ];
+
+    const floor = this.state.floor;
+    const raw = [
+      { use: 'Retail Zone', note: '1층 핵심코너 · 약국(101) 입점 예정', units: '14개 호실 (101~114)', exclusive: '10.45 ~ 13.49평', supply: '19.91 ~ 25.71평', img: 'images/floor1.webp' },
+      { use: 'Medical Zone', note: '11자 동선 전면 호실 (201~208)', units: '8개 호실 (201~208)', exclusive: '15.10 ~ 33.87평', supply: '28.79 ~ 64.56평', img: 'images/floor2.webp' },
+      { use: 'Medical Zone', note: '11자 동선 전면 호실 (301~308)', units: '8개 호실 (301~308)', exclusive: '15.10 ~ 33.87평', supply: '28.79 ~ 64.56평', img: 'images/floor3.webp' },
+      { use: 'Education Zone', note: '11자 동선 전면 호실 (401~408)', units: '8개 호실 (401~408)', exclusive: '13.88 ~ 34.09평', supply: '26.46 ~ 64.97평', img: 'images/floor4.webp' },
+      { use: 'Aesthetic Zone', note: '11자 동선 전면 호실 (501~508)', units: '8개 호실 (501~508)', exclusive: '13.88 ~ 34.09평', supply: '26.46 ~ 64.97평', img: 'images/floor5.webp' },
+    ];
+
+    const tabBase = 'background: none; cursor: pointer; font-family: inherit; font-size: 14.5px; font-weight: 500; padding: 13px 24px; border-radius: 3px; letter-spacing: 0.03em; transition: all 0.3s; text-align: center; min-width: 84px;';
+    const floorTabs = raw.map((u, i) => ({
+      planLabel: i + 1 + '층',
+      use: u.use,
+      units: u.units,
+      exclusive: u.exclusive,
+      supply: u.supply,
+      img: u.img,
+      label: i + 1 + '층',
+      onClick: () => this.setState({ floor: i }),
+      style: i === floor
+        ? tabBase + ' background: #C9A96E; color: #0A0E1A; border: 1px solid #C9A96E;'
+        : tabBase + ' background: transparent; color: #8A90A0; border: 1px solid rgba(201,169,110,0.25);',
+      rowStyle: 'cursor: pointer; transition: background 0.25s;' + (i === floor ? ' background: rgba(201,169,110,0.06);' : ''),
+    }));
+
+    const sf = raw[floor];
+    const selectedFloor = {
+      planLabel: floor + 1 + 'F',
+      use: sf.use,
+      note: sf.note,
+      units: sf.units,
+      exclusive: sf.exclusive,
+      supply: sf.supply,
+      img: sf.img,
+    };
+
+    const openPlan = () => { this.setState({ lightbox: { open: true, isPlan: true, label: floor + 1 + 'F', img: sf.img } }); this._setupLightbox(); };
+    const openMap = () => { this.setState({ lightbox: { open: true, isMap: true } }); this._setupLightbox(); };
+    const openOverview = () => { this.setState({ lightbox: { open: true, isOverview: true } }); this._setupLightbox(); };
+    const closeLightbox = () => { this.setState({ lightbox: { open: false } }); this._teardownLightbox(); };
+    const stopProp = (e) => { e.stopPropagation(); };
+
+    // ---- reservation form ----
+    const form = this.state.form;
+    const floorOptions = ['관심 층 선택 (선택)'].concat(raw.map((u, i) => (i + 1) + '층 · ' + u.use));
+    const setField = (key) => (e) => { const v = e.target.value; this.setState((s) => ({ form: { ...s.form, [key]: v }, formError: '' })); };
+    const onName = setField('name'), onPhone = setField('phone'), onDate = setField('date'), onTime = setField('time'), onFloor = setField('floor');
+    const toggleAgree = () => this.setState((s) => ({ form: { ...s.form, agree: !s.form.agree }, formError: '' }));
+    const agreeBoxStyle = 'width: 20px; height: 20px; flex-shrink: 0; border-radius: 4px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; border: 1.5px solid ' + (form.agree ? '#C9A96E' : 'rgba(201,169,110,0.4)') + '; background: ' + (form.agree ? '#C9A96E' : 'transparent') + ';';
+
+    const openReserve = () => { this.setState({ reserve: { open: true, step: 'form' }, formError: '' }); this._setupLightbox(); };
+    const closeReserve = () => { this.setState((s) => ({ reserve: { ...s.reserve, open: false } })); this._teardownLightbox(); };
+    const editReserve = () => this.setState((s) => ({ reserve: { ...s.reserve, step: 'form' } }));
+
+    const sendSms = async (phone, f) => {
+      const phoneNumber = (phone || '').replace(/\D/g, '');
+      const message = `방문예약 접수되었습니다.\n성함: ${f.name}\n연락처: ${f.phone}\n방문 예정: ${fmtDate(f.date)} ${f.time || ''}\n관심 층: ${(f.floor && f.floor.indexOf('선택') === -1) ? f.floor : '미지정'}`;
+
+      try {
+        const res = await fetch('/api/send-sms', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ phone: phoneNumber, message }),
+        });
+        return res.ok;
+      } catch (err) {
+        console.error('SMS 전송 오류', err);
+        return false;
+      }
+    };
+
+    const submitReserve = async () => {
+      const f = this.state.form;
+      const phoneOk = /^01[016-9][-\s]?\d{3,4}[-\s]?\d{4}$/.test((f.phone || '').replace(/\s/g, ''));
+      if (!f.name || !f.name.trim()) return this.setState({ formError: '성함을 입력해 주세요.' });
+      if (!phoneOk) return this.setState({ formError: '연락처를 정확히 입력해 주세요. (예: 010-1234-5678)' });
+      if (!f.date) return this.setState({ formError: '방문 예정 날짜를 선택해 주세요.' });
+      if (!f.time) return this.setState({ formError: '방문 예정 시간을 선택해 주세요.' });
+      if (!f.agree) return this.setState({ formError: '개인정보 수집 및 이용에 동의해 주세요.' });
+
+      this.setState({ formError: '' });
+      const smsSent = await sendSms(f.phone, f);
+      if (!smsSent) return this.setState({ formError: '문자 전송에 실패했습니다. 잠시 후 다시 시도해 주세요.' });
+
+      this.setState((s) => ({ reserve: { ...s.reserve, step: 'done' } }));
+    };
+
+    const fmtDate = (d) => { if (!d) return '-'; const [y, m, dd] = d.split('-'); return y + '년 ' + Number(m) + '월 ' + Number(dd) + '일'; };
+    const reserveSummary = [
+      { label: '성함', value: form.name || '-' },
+      { label: '연락처', value: form.phone || '-' },
+      { label: '방문 예정', value: fmtDate(form.date) + (form.time ? '  ' + form.time : '') },
+      { label: '관심 층', value: (form.floor && form.floor.indexOf('선택') === -1) ? form.floor : '미지정' },
+    ];
+
+    return {
+      navStyle, revealStyle, tenants, overview, overviewDetail, floorTabs, selectedFloor,
+      openPlan, openMap, openOverview, closeLightbox, stopProp, lightbox: this.state.lightbox,
+      reserve: { open: this.state.reserve.open, isForm: this.state.reserve.step === 'form', isDone: this.state.reserve.step === 'done' },
+      form, formError: this.state.formError, floorOptions,
+      onName, onPhone, onDate, onTime, onFloor, toggleAgree, agreeBoxStyle,
+      openReserve, closeReserve, editReserve, submitReserve, reserveSummary,
+    };
+  }
+}
+</script>
+</body>
+</html>
