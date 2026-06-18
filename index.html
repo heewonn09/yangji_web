@@ -25,23 +25,46 @@
   html { scroll-behavior: smooth; }
   body { background: #0A0E1A; -webkit-font-smoothing: antialiased; }
   ::selection { background: rgba(201,169,110,0.3); color: #F5F0E8; }
+
   @media (max-width: 960px) {
-    [data-r="2col"] { grid-template-columns: 1fr !important; }
-    [data-r="feat"] { grid-template-columns: 1fr 1fr !important; }
-    [data-r="cta3"] { grid-template-columns: 1fr !important; }
-    [data-r="navlinks"] { display: none !important; }
-    [data-r="hero-h1"] { font-size: 46px !important; }
-    [data-r="phone"] { font-size: 36px !important; }
-    [data-r="table"] { font-size: 12px !important; }
+    [data-r="2col"]    { grid-template-columns: 1fr !important; }
+    [data-r="feat"]    { grid-template-columns: 1fr 1fr !important; }
+    [data-r="cta3"]    { grid-template-columns: 1fr !important; }
+    [data-r="navlinks"]{ display: none !important; }
+    [data-r="hero-h1"] { font-size: 40px !important; }
+    [data-r="phone"]   { font-size: 36px !important; }
+    [data-r="table"]   { font-size: 12px !important; }
+    [data-r="navinner"]{ padding: 0 20px !important; }
+    [data-r="navbtn"]  { font-size: 12px !important; padding: 8px 14px !important; }
+    [data-r="hero-h1-big"] { font-size: 44px !important; }
+    [data-r="hero-sub"]    { font-size: 24px !important; }
+    #ysc-main h2 { font-size: 34px !important; }
   }
+
   @media (max-width: 560px) {
-    [data-r="feat"] { grid-template-columns: 1fr !important; }
-    [data-r="hero-h1"] { font-size: 36px !important; }
-    [data-r="phone"] { font-size: 26px !important; letter-spacing: 0.01em !important; }
-    [data-r="sectionpad"] { padding-left: 20px !important; padding-right: 20px !important; }
+    [data-r="feat"]    { grid-template-columns: 1fr !important; }
+    [data-r="phone"]   { font-size: 26px !important; letter-spacing: 0.01em !important; }
+    [data-r="sectionpad"] { padding: 70px 20px !important; }
     [data-r="table"] th, [data-r="table"] td { padding: 12px 14px !important; }
-    [data-r="swipehint"] { display: block !important; }
+    [data-r="swipehint"]{ display: block !important; }
     [data-r="barinfo"] { display: none !important; }
+    /* 네비 */
+    [data-r="navinner"]{ padding: 0 16px !important; height: 60px !important; }
+    [data-r="navbtn"]  { display: none !important; }
+    /* 히어로 */
+    #top [data-r="2col"]   { padding: 0 20px !important; gap: 36px !important; }
+    [data-r="hero-h1"]     { font-size: 24px !important; }
+    [data-r="hero-h1-big"] { font-size: 28px !important; }
+    [data-r="hero-sub"]    { font-size: 18px !important; margin-bottom: 14px !important; }
+    [data-r="statnums"]    { gap: 10px !important; }
+    /* 섹션 제목 */
+    #ysc-main h2 { font-size: 24px !important; }
+    /* 섹션 내부 패딩 (inline div) */
+    #tenants > div        { padding: 70px 20px !important; }
+    #cta > div:last-child { padding: 70px 20px !important; }
+    footer [data-r="2col"]{ padding: 40px 20px !important; }
+    /* 평면도 뷰어 최소 높이 축소 */
+    #units [data-r="2col"] > div:first-child { min-height: 280px !important; }
   }
 </style>
 </helmet>
@@ -50,7 +73,7 @@
 
   <!-- ============ NAV ============ -->
   <nav style="{{ navStyle }}">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px; height: 76px; display: flex; align-items: center; justify-content: space-between;">
+    <div data-r="navinner" style="max-width: 1320px; margin: 0 auto; padding: 0 40px; height: 76px; display: flex; align-items: center; justify-content: space-between;">
       <a href="#top" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1;">
         <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: #F5F0E8; letter-spacing: 0.02em;">브레인시티 일레븐타워</span>
         <span style="font-size: 9.5px; letter-spacing: 0.3em; color: #C9A96E; margin-top: 4px; font-weight: 400;">BRAINCITY ELEVEN TOWER</span>
@@ -63,7 +86,7 @@
           <a href="#units" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">상가 안내</a>
           <a href="#cta" style="text-decoration: none; color: #8A90A0; font-size: 13.5px; letter-spacing: 0.04em; transition: color 0.3s;" style-hover="color: #F5F0E8;">문의</a>
         </div>
-        <a href="#cta" style="text-decoration: none; border: 1px solid #C9A96E; color: #E8C98A; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; padding: 11px 22px; border-radius: 2px; transition: all 0.3s;" style-hover="background: #C9A96E; color: #0A0E1A;">분양·임대 문의</a>
+        <a href="#cta" data-r="navbtn" style="text-decoration: none; border: 1px solid #C9A96E; color: #E8C98A; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; padding: 11px 22px; border-radius: 2px; transition: all 0.3s;" style-hover="background: #C9A96E; color: #0A0E1A;">분양·임대 문의</a>
       </div>
     </div>
   </nav>
@@ -90,7 +113,7 @@
           <span style="font-size: 12px; letter-spacing: 0.3em; color: #C9A96E;">EXCLUSIVE · 선착순 분양 / 임대 마감 임박</span>
         </div>
         
-        <h1 data-r="hero-h1" style="font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 40px; line-height: 1.18; letter-spacing: -0.02em; color: #F5F0E8; margin-bottom: 14px;">평택 브레인시티<br><span style="font-weight: 700; font-size: 60px; color: #FFFFFF;">11자 핵심상권의 완성</span></h1><p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 32px; color: #C9A96E; letter-spacing: 0.02em; margin-bottom: 28px;">BrainCity Eleven Tower</p>
+        <h1 data-r="hero-h1" style="font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 40px; line-height: 1.18; letter-spacing: -0.02em; color: #F5F0E8; margin-bottom: 14px;">평택 브레인시티<br><span data-r="hero-h1-big" style="font-weight: 700; font-size: 60px; color: #FFFFFF;">11자 핵심상권의 완성</span></h1><p data-r="hero-sub" style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 32px; color: #C9A96E; letter-spacing: 0.02em; margin-bottom: 28px;">BrainCity Eleven Tower</p>
         <p style="font-size: 16px; line-height: 1.9; color: #C4C8D2; max-width: 500px; font-weight: 300; margin-bottom: 18px;">아주대학교 병원 · KAIST · K-반도체가 완성하는 자족도시. <strong style="color: #E8C98A; font-weight: 500;">6만~7만 배후수요</strong>가 증명하는 단 하나의 11자(字) 핵심상권.</p>
         <p style="font-size: 14px; line-height: 1.7; color: #8A90A0; max-width: 500px; font-weight: 300; margin-bottom: 40px;">선호도 높은 전면 호실의 잔여가 빠르게 마감되고 있습니다. 지금 실시간 방문예약을 통해 평택의 미래를 먼저 선점하십시오.</p>
         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
@@ -99,20 +122,19 @@
         </div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+      <div data-r="statnums" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
         <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px;">
-          <div style="font-family: Poppins; font-size: 46px; font-weight: 400; color: #E8C98A; line-height: 1"><span style="font-size: 28px; margin-left: 4px; position: static; font-family: Roboto; width: 59px; height: 41px" data-om-label="ㄴㄴ">11자</span></div>
+          <div style="font-family: Poppins; font-size: 46px; font-weight: 400; color: #E8C98A; line-height: 1"><span style="font-size: 28px; margin-left: 4px; position: static; font-family: Roboto;" data-om-label="ㄴㄴ">11자</span></div>
           <div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px">핵심상권 동선</div>
         </div>
-        <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px; width: 179px; height: 161px">
-          
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 400; color: #E8C98A; line-height: 1.05; width: 126px; height: 36px">2029 – 2030</div><div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px;">앵커시설 입점 확정</div>
+        <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px;">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 400; color: #E8C98A; line-height: 1.05;">2029 – 2030</div><div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px;">앵커시설 입점 확정</div>
         </div>
         <div style="border: 1px solid rgba(201,169,110,0.18); background: rgba(255,255,255,0.015); padding: 30px 26px; border-radius: 3px;">
           <div style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 400; color: #E8C98A; line-height: 1.1;">161–171<span style="font-size: 18px; margin-left: 3px;">평</span></div>
           <div style="font-size: 12.5px; color: #8A90A0; margin-top: 10px;">호실 전용면적</div>
         </div>
-        <a href="tel:010-8228-0143" style="text-decoration: none; border: 1px solid rgba(201,169,110,0.18); background: rgba(201,169,110,0.06); padding: 30px 26px; border-radius: 3px; width: 181px; height: 161px; display: block;">
+        <a href="tel:010-8228-0143" style="text-decoration: none; border: 1px solid rgba(201,169,110,0.18); background: rgba(201,169,110,0.06); padding: 30px 26px; border-radius: 3px; display: block;">
           <div style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; color: #E8C98A; line-height: 1.1; white-space: nowrap;">010-8228-0143</div><div style="font-size: 12px; color: #8A90A0; margin-top: 10px;">평택 센타장 김성희</div>
 
         </a>
@@ -264,7 +286,7 @@
         <tbody>
           <sc-for list="{{ floorTabs }}" as="u" hint-placeholder-count="5">
             <tr onClick="{{ u.onClick }}" style="{{ u.rowStyle }}">
-              <td style="padding: 18px 24px; border-bottom: 1px solid rgba(201,169,110,0.1);"><span style="color: #F5F0E8; font-weight: 500;">{{ u.planLabel }}</span><span style="display: block; font-size: 11px; color: #8A90A0; margin-top: 3px; width: 68px; height: 29px">{{ u.use }}</span></td>
+              <td style="padding: 18px 24px; border-bottom: 1px solid rgba(201,169,110,0.1);"><span style="color: #F5F0E8; font-weight: 500;">{{ u.planLabel }}</span><span style="display: block; font-size: 11px; color: #8A90A0; margin-top: 3px;">{{ u.use }}</span></td>
               <td style="padding: 18px 24px; text-align: right; color: #B7BCC8; border-bottom: 1px solid rgba(201,169,110,0.1);">{{ u.units }}</td>
               <td style="padding: 18px 24px; text-align: right; color: #F5F0E8; border-bottom: 1px solid rgba(201,169,110,0.1);">{{ u.exclusive }}</td>
               <td style="padding: 18px 24px; text-align: right; color: #E8C98A; font-weight: 500; border-bottom: 1px solid rgba(201,169,110,0.1);">{{ u.supply }}</td>
