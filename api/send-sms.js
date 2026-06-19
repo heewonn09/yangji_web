@@ -22,10 +22,10 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ ok: false, error: '필수 항목 누락' });
     }
 
-    const apiKey    = process.env.SOLAPI_API_KEY    || '';
-    const apiSecret = process.env.SOLAPI_API_SECRET || '';
-    const toPhone   = (process.env.TO_PHONE   || '').replace(/\D/g, '');
-    const fromPhone = (process.env.FROM_PHONE || '').replace(/\D/g, '');
+    const apiKey    = (process.env.SOLAPI_API_KEY    || '').trim();
+    const apiSecret = (process.env.SOLAPI_API_SECRET || '').trim();
+    const toPhone   = (process.env.TO_PHONE   || '').replace(/\D/g, '').trim();
+    const fromPhone = (process.env.FROM_PHONE || '').replace(/\D/g, '').trim();
 
     console.log('ENV:', { hasKey: !!apiKey, hasSecret: !!apiSecret, to: toPhone, from: fromPhone });
 
