@@ -1,4 +1,4 @@
-const SolapiMessageService = require('solapi');
+const { SolapiMessageService } = require('solapi');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
